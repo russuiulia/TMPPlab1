@@ -12,7 +12,23 @@ Un exemplu clasic al metodei Factory este implementarea unui Creator abstract,
 care definește metoda fabricării, iar subclasele concrete (creatori specifici)
 implementează această metodă pentru a returna diferite tipuri de produse.
 */
+/*
+Avantaje:
+Principiul deschis/închis (Open/Closed) – Permite extinderea aplicației fără a modifica codul existent.
 
+Separarea logicii de creare a obiectelor – Îmbunătățește modularitatea și face codul mai ușor de întreținut.
+
+Flexibilitate – Permite crearea de obiecte diferite fără a modifica clientul.
+
+Respectă principiul responsabilității unice (SRP) – Creatorul și produsul sunt gestionate separat.
+
+Dezavantaje:
+Crește complexitatea codului – Adaugă mai multe clase și interfețe, ceea ce poate complica structura aplicației.
+
+Poate afecta performanța – Crearea de obiecte prin metode virtuale poate avea un impact asupra performanței în anumite cazuri.
+
+Necesită mai mult efort de proiectare – Este nevoie de o bună înțelegere a relațiilor dintre clase pentru a fi implementat corect.
+*/
 
 abstract class Creator {
     public abstract factoryMethod(): Product;
