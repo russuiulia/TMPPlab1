@@ -1,4 +1,6 @@
-# Șabloane Creționale
+#Laboratorul nr.1 TMPP
+
+# Șabloane Creaționale
 
 
 ## 1. Singleton
